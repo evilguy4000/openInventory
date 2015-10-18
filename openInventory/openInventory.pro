@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        oi_inventorywindow.cpp
+        oi_inventorywindow.cpp \
+    oi_mysqlhandler.cpp
 
-HEADERS  += oi_inventorywindow.h
+HEADERS  += oi_inventorywindow.h \
+    oi_mysqlhandler.h
 
 FORMS    += oi_inventorywindow.ui
