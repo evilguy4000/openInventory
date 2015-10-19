@@ -4,9 +4,9 @@
 
 public functions
 
-= setVars(int Poort,QString databaseName, QString Username, QString Password, QString Ip);
-= getVars();
-= setupConnection();
+- setVars(int Poort,QString databaseName, QString Username, QString Password, QString Ip);
+- getVars();
+-setupConnection();
 
 -- LIST OF ERROR CODES--
 
