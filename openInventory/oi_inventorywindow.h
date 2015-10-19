@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 
+#include "main.h"
+
+using namespace std;
+
 namespace Ui {
 class OI_inventoryWindow;
 }

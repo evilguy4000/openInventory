@@ -1,11 +1,16 @@
 #ifndef OI_MYSQLHANDLER_H
 #define OI_MYSQLHANDLER_H
 
+using namespace std;
+
+#include "main.h"
 
 class oi_mysqlhandler
 {
 public:
-    oi_mysqlhandler();
+    setVars(int Poort,QString databaseName, QString Username, QString Password, QString Ip);
+    getVars();
+    setupConnection();
 };
 
 #endif // OI_MYSQLHANDLER_H

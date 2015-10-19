@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,6 +19,8 @@ SOURCES += main.cpp\
     oi_mysqlhandler.cpp
 
 HEADERS  += oi_inventorywindow.h \
-    oi_mysqlhandler.h
+    oi_mysqlhandler.h \
+    main.h
 
 FORMS    += oi_inventorywindow.ui
+
