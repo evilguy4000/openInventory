@@ -11,7 +11,7 @@ public:
     setVars(int Poort,QString databaseName, QString Username, QString Password, QString Ip);
     getVars();
     setupConnection();
-    executeQuery(QList<QString> a);
+    QString executeQuery(QString table, QString Value, QString searchValue, QString searchedItem);
 };
 
 #endif // OI_MYSQLHANDLER_H

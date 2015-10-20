@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     mh.setVars(3306,"db_openInventory","root","","192.168.20.150");
     mh.setupConnection();
 
-    OI_inventoryWindow w;
+    OI_loginWindow w;
     w.show();
 
     return a.exec();

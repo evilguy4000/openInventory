@@ -5,6 +5,7 @@ QString dN;
 QString U;
 QString P;
 QString I;
+QSqlDatabase global;
 
 oi_mysqlhandler::setVars(int Poort,QString Databasename, QString Username, QString Password, QString Ip)
 {
@@ -26,6 +27,7 @@ oi_mysqlhandler::setupConnection()
    db.setDatabaseName(dN);
    db.setUserName(U);
    db.setPassword(P);
+   global = db;
    bool ok = db.open();
    if(ok)
    {
@@ -38,14 +40,13 @@ oi_mysqlhandler::setupConnection()
 
 }
 
-oi_mysqlhandler::executeQuery(QList<QString> a)
+QString oi_mysqlhandler::executeQuery(QString table, QString Value, QString searchValue, QString searchedItem)
 {
-    int l = a.length();
-    cout << l << endl;
-    foreach(QString st, a)
-    {
-        qDebug() << st;
-    }
+    global.open();
+    QSqlQuery q;
+    q.prepare("SELECT "+searchedItem+ " FROM "+table+" WHERE "+ searchValue+" = "+searchedItem+";");
+    q.exec();
+    return q.value(0).toString();
 }
 
 

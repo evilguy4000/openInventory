@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>OI_inventoryWindow</class>
- <widget class="QMainWindow" name="OI_inventoryWindow">
+ <class>OI_loginWindow</class>
+ <widget class="QMainWindow" name="OI_loginWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>719</width>
-    <height>466</height>
+    <width>488</width>
+    <height>438</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>OI_inventoryWindow</string>
+   <string>OI_loginWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -200,16 +200,6 @@
      </layout>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>719</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

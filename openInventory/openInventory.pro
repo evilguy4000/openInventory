@@ -15,14 +15,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        oi_inventorywindow.cpp \
-    oi_mysqlhandler.cpp
+    oi_mysqlhandler.cpp \
+    oi_loginwindow.cpp
 
-HEADERS  += oi_inventorywindow.h \
+HEADERS  += \
     oi_mysqlhandler.h \
-    main.h
+    main.h \
+    oi_loginwindow.h
 
-FORMS    += oi_inventorywindow.ui
+FORMS    += \
+    oi_loginwindow.ui
 
 RESOURCES += \
     imageres.qrc

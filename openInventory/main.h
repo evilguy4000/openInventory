@@ -9,7 +9,7 @@
 #include <iostream>
 #include <QDebug>
 
-#include "oi_inventorywindow.h"
+#include "oi_loginwindow.h"
 #include "oi_mysqlhandler.h"
 
 using namespace std;
