@@ -11,6 +11,7 @@ public:
     setVars(int Poort,QString databaseName, QString Username, QString Password, QString Ip);
     getVars();
     setupConnection();
+    executeQuery(QList<QString> a);
 };
 
 #endif // OI_MYSQLHANDLER_H

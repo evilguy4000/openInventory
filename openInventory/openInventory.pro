@@ -24,3 +24,6 @@ HEADERS  += oi_inventorywindow.h \
 
 FORMS    += oi_inventorywindow.ui
 
+RESOURCES += \
+    imageres.qrc
+

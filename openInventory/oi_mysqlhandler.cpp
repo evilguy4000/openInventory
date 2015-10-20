@@ -38,3 +38,14 @@ oi_mysqlhandler::setupConnection()
 
 }
 
+oi_mysqlhandler::executeQuery(QList<QString> a)
+{
+    int l = a.length();
+    cout << l << endl;
+    foreach(QString st, a)
+    {
+        qDebug() << st;
+    }
+}
+
+
